@@ -1,4 +1,4 @@
-import { ArrowRight, Instagram } from "lucide-react";
+import { ArrowRight, AtSign } from "lucide-react";
 import heroImg from "../assets/hero-worship.jpg";
 import kidsImg from "../assets/kids.jpg";
 import bandImg from "../assets/worship-band.jpg";
