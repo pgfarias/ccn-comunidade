@@ -51,9 +51,9 @@ export function SiteFooter() {
             Horários
           </h3>
           <ul className="mt-4 space-y-2 text-sm text-foreground/80">
-            <li><strong>Sexta:</strong> 20h — Culto de Ensino</li>
-            <li><strong>Domingo:</strong> 9h30 — Escola Bíblica</li>
-            <li><strong>Domingo:</strong> 18h30 — Culto da Família</li>
+            <li><strong>Sexta:</strong> 20h — Culto de Ensino (presencial e online)</li>
+            <li><strong>Domingo:</strong> 9h30 — Escola Bíblica (presencial e online)</li>
+            <li><strong>Domingo:</strong> 18h30 — Culto da Família (online)</li>
           </ul>
         </div>
 
