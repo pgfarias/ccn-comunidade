@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Calendar, Clock, MapPin, Play, ArrowRight, MessageCircle } from "lucide-react";
 import { FishIcon } from "../components/FishIcon";
+import { InstagramFeedSection } from "../components/InstagramFeedSection";
 import heroImg from "../assets/hero-worship.jpg";
 import kidsImg from "../assets/kids.jpg";
 import bandImg from "../assets/worship-band.jpg";
