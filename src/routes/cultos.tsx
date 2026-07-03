@@ -9,7 +9,7 @@ export const Route = createFileRoute("/cultos")({
       {
         name: "description",
         content:
-          "Assista aos cultos ao vivo da CCN. Horários: sexta 20h, domingo 9h30 e 18h30. Confira as últimas mensagens.",
+          "Assista aos cultos ao vivo da CCN. Sexta 20h e domingo 9h30 (presencial e online). Domingo 18h30 (online). Confira as últimas mensagens.",
       },
       { property: "og:title", content: "Cultos & Ao Vivo — CCN" },
       { property: "og:url", content: "/cultos" },
@@ -20,9 +20,9 @@ export const Route = createFileRoute("/cultos")({
 });
 
 const horarios = [
-  { dia: "Sexta-feira", hora: "20h00", nome: "Culto de Ensino", descricao: "Uma noite para aprofundar na Palavra." },
-  { dia: "Domingo", hora: "9h30", nome: "Escola Bíblica", descricao: "Estudo bíblico para todas as idades." },
-  { dia: "Domingo", hora: "18h30", nome: "Culto da Família", descricao: "Nosso principal culto da semana." },
+  { dia: "Sexta-feira", hora: "20h00", nome: "Culto de Ensino", descricao: "Presencial e online." },
+  { dia: "Domingo", hora: "9h30", nome: "Escola Bíblica", descricao: "Presencial e online." },
+  { dia: "Domingo", hora: "18h30", nome: "Culto da Família", descricao: "Online." },
 ];
 
 const videos = [

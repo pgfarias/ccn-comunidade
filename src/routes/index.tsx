@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Bem-vindo à CCN — uma família de fé no Jardim Umarizal, São Paulo. Cultos sexta às 20h e domingo às 9h30 e 18h30. Assista ao vivo e venha nos visitar.",
+          "Bem-vindo à CCN — uma família de fé no Jardim Umarizal, São Paulo. Cultos sexta 20h (presencial e online), domingo 9h30 (presencial e online) e 18h30 (online). Venha nos visitar.",
       },
       { property: "og:title", content: "CCN — Comunidade Cristo para as Nações" },
       { property: "og:description", content: "Você é bem-vindo. Venha fazer parte dessa família." },
@@ -298,9 +298,9 @@ function HomePage() {
             <Clock className="h-6 w-6 text-primary" />
             <h3 className="mt-3 font-display text-xl font-semibold text-primary-deep">Horários dos cultos</h3>
             <ul className="mt-2 space-y-1.5 text-sm text-foreground/80">
-              <li><strong>Sexta:</strong> 20h — Culto de Ensino</li>
-              <li><strong>Domingo:</strong> 9h30 — Escola Bíblica</li>
-              <li><strong>Domingo:</strong> 18h30 — Culto da Família</li>
+              <li><strong>Sexta:</strong> 20h — Culto de Ensino (presencial e online)</li>
+              <li><strong>Domingo:</strong> 9h30 — Escola Bíblica (presencial e online)</li>
+              <li><strong>Domingo:</strong> 18h30 — Culto da Família (online)</li>
             </ul>
           </div>
           <div className="card-soft p-6">
