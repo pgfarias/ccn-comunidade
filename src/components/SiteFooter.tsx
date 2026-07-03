@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, MapPin, Mail, Phone, MessageCircle } from "lucide-react";
+import { AtSign as Instagram, MapPin, Mail, Phone, MessageCircle } from "lucide-react";
 import { FishIcon } from "./FishIcon";
 
 export function SiteFooter() {
