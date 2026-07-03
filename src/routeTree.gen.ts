@@ -9,8 +9,56 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as MinisteriosRouteImport } from './routes/ministerios'
+import { Route as CultosRouteImport } from './routes/cultos'
+import { Route as ConteudoRouteImport } from './routes/conteudo'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as BibliaRouteImport } from './routes/biblia'
+import { Route as AgendaRouteImport } from './routes/agenda'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SobreRoute = SobreRouteImport.update({
+  id: '/sobre',
+  path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MinisteriosRoute = MinisteriosRouteImport.update({
+  id: '/ministerios',
+  path: '/ministerios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CultosRoute = CultosRouteImport.update({
+  id: '/cultos',
+  path: '/cultos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConteudoRoute = ConteudoRouteImport.update({
+  id: '/conteudo',
+  path: '/conteudo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BibliaRoute = BibliaRouteImport.update({
+  id: '/biblia',
+  path: '/biblia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgendaRoute = AgendaRouteImport.update({
+  id: '/agenda',
+  path: '/agenda',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +67,144 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/agenda': typeof AgendaRoute
+  '/biblia': typeof BibliaRoute
+  '/contato': typeof ContatoRoute
+  '/conteudo': typeof ConteudoRoute
+  '/cultos': typeof CultosRoute
+  '/ministerios': typeof MinisteriosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sobre': typeof SobreRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/agenda': typeof AgendaRoute
+  '/biblia': typeof BibliaRoute
+  '/contato': typeof ContatoRoute
+  '/conteudo': typeof ConteudoRoute
+  '/cultos': typeof CultosRoute
+  '/ministerios': typeof MinisteriosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sobre': typeof SobreRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/agenda': typeof AgendaRoute
+  '/biblia': typeof BibliaRoute
+  '/contato': typeof ContatoRoute
+  '/conteudo': typeof ConteudoRoute
+  '/cultos': typeof CultosRoute
+  '/ministerios': typeof MinisteriosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sobre': typeof SobreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/agenda'
+    | '/biblia'
+    | '/contato'
+    | '/conteudo'
+    | '/cultos'
+    | '/ministerios'
+    | '/sitemap.xml'
+    | '/sobre'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/agenda'
+    | '/biblia'
+    | '/contato'
+    | '/conteudo'
+    | '/cultos'
+    | '/ministerios'
+    | '/sitemap.xml'
+    | '/sobre'
+  id:
+    | '__root__'
+    | '/'
+    | '/agenda'
+    | '/biblia'
+    | '/contato'
+    | '/conteudo'
+    | '/cultos'
+    | '/ministerios'
+    | '/sitemap.xml'
+    | '/sobre'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AgendaRoute: typeof AgendaRoute
+  BibliaRoute: typeof BibliaRoute
+  ContatoRoute: typeof ContatoRoute
+  ConteudoRoute: typeof ConteudoRoute
+  CultosRoute: typeof CultosRoute
+  MinisteriosRoute: typeof MinisteriosRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SobreRoute: typeof SobreRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sobre': {
+      id: '/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ministerios': {
+      id: '/ministerios'
+      path: '/ministerios'
+      fullPath: '/ministerios'
+      preLoaderRoute: typeof MinisteriosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cultos': {
+      id: '/cultos'
+      path: '/cultos'
+      fullPath: '/cultos'
+      preLoaderRoute: typeof CultosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conteudo': {
+      id: '/conteudo'
+      path: '/conteudo'
+      fullPath: '/conteudo'
+      preLoaderRoute: typeof ConteudoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/biblia': {
+      id: '/biblia'
+      path: '/biblia'
+      fullPath: '/biblia'
+      preLoaderRoute: typeof BibliaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agenda': {
+      id: '/agenda'
+      path: '/agenda'
+      fullPath: '/agenda'
+      preLoaderRoute: typeof AgendaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +217,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AgendaRoute: AgendaRoute,
+  BibliaRoute: BibliaRoute,
+  ContatoRoute: ContatoRoute,
+  ConteudoRoute: ConteudoRoute,
+  CultosRoute: CultosRoute,
+  MinisteriosRoute: MinisteriosRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SobreRoute: SobreRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
