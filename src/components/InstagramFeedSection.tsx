@@ -60,7 +60,7 @@ export function InstagramFeedSection() {
           rel="noreferrer"
           className="btn-outline"
         >
-          <Instagram className="h-4 w-4" />
+          <AtSign className="h-4 w-4" />
           Seguir no Instagram
         </a>
       </div>
