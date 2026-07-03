@@ -231,48 +231,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* INSTAGRAM FEED (mock grid) */}
-      <section className="container-app py-20">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="eyebrow">Redes sociais</p>
-            <h2 className="mt-2 font-display text-3xl font-semibold sm:text-4xl">
-              Acompanhe no Instagram
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              @comunidadeccn — momentos e avisos da semana.
-            </p>
-          </div>
-          <a
-            href="https://instagram.com/comunidadeccn"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-outline"
-          >
-            Seguir no Instagram
-          </a>
-        </div>
-
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-          {[heroImg, kidsImg, bandImg, youthImg, familyImg, preachingImg].map((src, i) => (
-            <a
-              key={i}
-              href="https://instagram.com/comunidadeccn"
-              target="_blank"
-              rel="noreferrer"
-              className="group relative aspect-square overflow-hidden rounded-xl bg-muted"
-            >
-              <img
-                src={src}
-                alt=""
-                loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-primary-deep/0 transition group-hover:bg-primary-deep/30" />
-            </a>
-          ))}
-        </div>
-      </section>
+      <InstagramFeedSection />
 
       {/* LOCALIZAÇÃO + HORÁRIOS + WHATSAPP */}
       <section className="container-app pb-20">
