@@ -96,7 +96,7 @@ export function InstagramFeedSection() {
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-primary-deep/0 transition group-hover:bg-primary-deep/40">
-                <Instagram className="h-6 w-6 text-white opacity-0 transition group-hover:opacity-100" />
+                <AtSign className="h-6 w-6 text-white opacity-0 transition group-hover:opacity-100" />
               </div>
             </a>
           ))}
