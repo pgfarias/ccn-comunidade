@@ -73,7 +73,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Comunidade Cristo para as Nações" },
       { property: "og:site_name", content: "Comunidade Cristo para as Nações" },
-      { property: "og:title", content: "CCN — Comunidade Cristo para as Nações" },
+      { property: "og:title", content: "CCN — Comunidade Cristo para as Nações | Igreja no Jardim Umarizal" },
       {
         property: "og:description",
         content:
@@ -82,6 +82,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0077b6" },
+      { name: "twitter:title", content: "CCN — Comunidade Cristo para as Nações | Igreja no Jardim Umarizal" },
+      { name: "description", content: "A website for Comunidade Cristo para as Nações (CCN) church, blending institutional information with a content hub." },
+      { property: "og:description", content: "A website for Comunidade Cristo para as Nações (CCN) church, blending institutional information with a content hub." },
+      { name: "twitter:description", content: "A website for Comunidade Cristo para as Nações (CCN) church, blending institutional information with a content hub." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/9MHYZWrYeNfGmTquOnw1HVRgeix2/social-images/social-1783038721649-logo-1.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/9MHYZWrYeNfGmTquOnw1HVRgeix2/social-images/social-1783038721649-logo-1.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
