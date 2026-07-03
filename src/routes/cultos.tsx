@@ -9,7 +9,7 @@ export const Route = createFileRoute("/cultos")({
       {
         name: "description",
         content:
-          "Assista aos cultos ao vivo da CCN. Horários: sexta 20h, domingo 9h30 e 18h30. Confira as últimas mensagens.",
+          "Assista aos cultos ao vivo da CCN. Sexta 20h e domingo 9h30 (presencial e online). Domingo 18h30 (online). Confira as últimas mensagens.",
       },
       { property: "og:title", content: "Cultos & Ao Vivo — CCN" },
       { property: "og:url", content: "/cultos" },
