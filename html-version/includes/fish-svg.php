@@ -1,0 +1,1 @@
+<svg viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="fish-icon" aria-hidden="true"><path d="M4 16 C 14 2, 40 2, 52 16 C 40 30, 14 30, 4 16 Z"/><path d="M52 16 L62 6 M52 16 L62 26"/><circle cx="14" cy="14" r="1.2" fill="currentColor" stroke="none"/></svg>
