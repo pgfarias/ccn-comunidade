@@ -30,7 +30,7 @@ import preachingImg from "../assets/preaching.jpg";
   e o grid de fallback (destaques) será substituído pelo feed ao vivo.
 */
 
-const WIDGET_URL = ""; // <-- cole aqui a URL do widget (SnapWidget, LightWidget etc.)
+const WIDGET_URL = "https://lightwidget.com/widgets/3c396f52799a5720b8c10accc760f320.html";
 
 const fallbackImages = [
   { src: heroImg, alt: "Momento de adoração na CCN" },
