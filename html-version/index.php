@@ -102,6 +102,7 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
+<!-- SEÇÃO DE MENSAGENS ATUALIZADA -->
 <section class="section container-app">
   <div class="flex items-center justify-between flex-wrap gap-3">
     <div>
@@ -112,9 +113,10 @@ require __DIR__ . '/includes/header.php';
   </div>
   <div class="grid-3 mt-10">
     <?php foreach ([
-      ['Mensagem','28 Set 2025','A cultura do Reino em tempos de incerteza','O evangelho responde às grandes questões da nossa geração com esperança e liberdade.','preaching.jpg'],
-      ['Devocional','24 Set 2025','Discernimento espiritual no cotidiano','Voltar a mente para a verdade do evangelho é um exercício diário — e possível.','worship-band.jpg'],
-      ['Esboço','18 Set 2025','Famílias que servem juntas','Cada geração ensina e aprende com a outra. O legado da fé atravessa o tempo.','family.jpg'],
+      // Incluído o nome do arquivo correspondente no final de cada item do array (posição [5])
+      ['Mensagem','28 Set 2025','A cultura do Reino em tempos de incerteza','O evangelho responde às grandes questões da nossa geração com esperança e liberdade.','preaching.jpg', 'msg-cultura-do-reino.php'],
+      ['Devocional','24 Set 2025','Discernimento espiritual no cotidiano','Voltar a mente para a verdade do evangelho é um exercício diário — e possível.','worship-band.jpg', 'msg-discernimento-espiritual.php'],
+      ['Esboço','18 Set 2025','Famílias que servem juntas','Cada geração ensina e aprende com a outra. O legado da fé atravessa o tempo.','family.jpg', 'msg-familias-que-servem.php'],
     ] as $m): ?>
       <article class="card-soft article-card">
         <div class="thumb"><img src="assets/img/<?= e($m[4]) ?>" alt="" loading="lazy"></div>
@@ -122,7 +124,8 @@ require __DIR__ . '/includes/header.php';
           <div class="tag-row"><span class="tag"><?= e($m[0]) ?></span><span class="date"><?= e($m[1]) ?></span></div>
           <h3><?= e($m[2]) ?></h3>
           <p><?= e($m[3]) ?></p>
-          <a href="conteudo.php" class="link-arrow">Ler mais →</a>
+          <!-- Aqui alteramos para pegar a posição [5] do array -->
+          <a href="<?= e($m[5]) ?>" class="link-arrow">Ler mais →</a>
         </div>
       </article>
     <?php endforeach; ?>
