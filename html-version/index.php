@@ -1,10 +1,38 @@
 <?php
 $pageTitle = 'CCN — Comunidade Cristo para as Nações | Igreja no Jd. Umarizal, SP';
 $pageDescription = 'Bem-vindo à CCN — família de fé no Jd. Umarizal, São Paulo. Cultos sexta 20h (presencial e online), domingo 9h30 (presencial e online) e 18h30 (online).';
+
+// ==========================================
+// LÓGICA INTELIGENTE DO PRÓXIMO CULTO
+// ==========================================
+date_default_timezone_set('America/Sao_Paulo');
+$dia_atual = (int)date('N'); // 1 (Segunda) a 7 (Domingo)
+$hora_atual = date('H:i');
+
+if ($dia_atual == 5) { // SEXTA-FEIRA
+    if ($hora_atual < '20:00') {
+        $proximo_dia = "Sexta"; $proxima_hora = "20h"; $proximo_nome = "Culto de Ensino";
+    } else {
+        $proximo_dia = "Domingo"; $proxima_hora = "09h30"; $proximo_nome = "Escola Bíblica";
+    }
+} elseif ($dia_atual == 6) { // SÁBADO
+    $proximo_dia = "Domingo"; $proxima_hora = "09h30"; $proximo_nome = "Escola Bíblica";
+} elseif ($dia_atual == 7) { // DOMINGO
+    if ($hora_atual < '09:30') {
+        $proximo_dia = "Domingo"; $proxima_hora = "09h30"; $proximo_nome = "Escola Bíblica";
+    } elseif ($hora_atual < '18:30') {
+        $proximo_dia = "Domingo"; $proxima_hora = "18h30"; $proximo_nome = "Culto da Família";
+    } else {
+        $proximo_dia = "Sexta"; $proxima_hora = "20h"; $proximo_nome = "Culto de Ensino";
+    }
+} else { // SEGUNDA, TERÇA, QUARTA OU QUINTA
+    $proximo_dia = "Sexta"; $proxima_hora = "20h"; $proximo_nome = "Culto de Ensino";
+}
+// ==========================================
+
 require __DIR__ . '/includes/header.php';
 ?>
 
-<!-- HERO -->
 <section class="hero">
   <div class="container-app hero-grid">
     <div>
@@ -27,19 +55,18 @@ require __DIR__ . '/includes/header.php';
       </div>
       <div class="hero-badge">
         <p class="lbl">Próximo culto</p>
-        <p class="h">Domingo • 18h30</p>
-        <p class="s">Culto da Família</p>
+        <p class="h"><?= $proximo_dia ?> • <?= $proxima_hora ?></p>
+        <p class="s"><?= $proximo_nome ?></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MISSÃO -->
 <section class="section container-app">
   <div class="center mx-auto max-w-3xl">
     <p class="eyebrow" style="justify-content:center">Nossa missão</p>
     <h2 class="section-title mt-3">Vidas transformadas pelo amor de Deus, servindo a uma geração inteira.</h2>
-    <p class="lede-lg mt-5">Cremos em um ministério atual e expressivo, capaz de apresentar respostas às grandes questões do nosso tempo — vivendo a cultura do Reino em esforço coletivo, esperança, alegria e liberdade.</p>
+    <p class="lede-lg mt-5">Cremos em um ministério atual e expressivo, capaz de apresentar respostas às grandes questões do nosso tempo — vivendo a cultura do Reino em effort coletivo, esperança, alegria e liberdade.</p>
   </div>
   <div class="grid-3 mt-12">
     <?php foreach ([
@@ -56,7 +83,6 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<!-- EVENTO -->
 <section class="bg-primary-deep">
   <div class="container-app event-block">
     <div>
@@ -76,7 +102,6 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<!-- MENSAGENS -->
 <section class="section container-app">
   <div class="flex items-center justify-between flex-wrap gap-3">
     <div>
@@ -104,7 +129,6 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<!-- VERSÍCULO -->
 <section class="verse bg-surface">
   <div class="container-app">
     <?php include __DIR__.'/includes/fish-svg.php'; ?>
@@ -113,7 +137,6 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<!-- INSTAGRAM -->
 <section class="section container-app">
   <div class="flex items-center justify-between flex-wrap gap-3">
     <div>
@@ -123,7 +146,7 @@ require __DIR__ . '/includes/header.php';
     <a href="https://instagram.com/<?= e($SITE['instagram']) ?>" target="_blank" rel="noreferrer" class="btn-outline">Ver perfil completo →</a>
   </div>
   <div class="ig-grid">
-    <?php for ($i = 1; $i <= 6; $i++): ?>
+    <?php for ($i = 1; $i <= 3; $i++): ?>
       <a href="https://www.instagram.com/comunidadeccn/" target="_blank" rel="noreferrer" class="ig-item" aria-label="Ver publicação no Instagram da CCN">
         <img src="/img/insta-<?= $i ?>.jpg" alt="Publicação do Instagram da CCN" loading="lazy">
         <span class="ig-overlay">
@@ -139,7 +162,6 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<!-- INFO -->
 <section class="container-app" style="padding-bottom:5rem">
   <div class="grid-3">
     <div class="card-soft info-block">
