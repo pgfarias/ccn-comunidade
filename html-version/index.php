@@ -114,7 +114,7 @@ require __DIR__ . '/includes/header.php';
   <div class="grid-3 mt-10">
     <?php foreach ([
       // Incluído o nome do arquivo correspondente no final de cada item do array (posição [5])
-      ['Mensagem','28 Set 2025','A cultura do Reino em tempos de incerteza','O evangelho responde às grandes questões da nossa geração com esperança e liberdade.','preaching.jpg', 'msg-cultura-do-reino.php'],
+      ['Mensagem','28 Set 2025','E sereis minhas testemunhas','O poder do Espírito Santo enviado para nos alinhar ao verdadeiro foco da igreja de Cristo.','preaching.jpg', 'msg-sereis-minhas-testemunhas.php'],
       ['Mensagem','24 Set 2025','Obediência gera relacionamento','Deus nos exorta a crescer e florescer com esperança, mesmo em terra de sofrimento e dor.','worship-band.jpg', 'msg-obediencia-gera-relacionamento.php'],
       ['Mensagem', '18 Set 2025', 'Decisões', 'Quais decisões você tomou essa semana? Uma reflexão sobre as escolhas de Davi e o impacto de colocar a fé no Deus vivo.', 'family.jpg', 'msg-decisoes.php'],
     ] as $m): ?>
