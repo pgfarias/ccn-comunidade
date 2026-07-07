@@ -123,7 +123,7 @@ require __DIR__ . '/includes/header.php';
     <a href="https://instagram.com/<?= e($SITE['instagram']) ?>" target="_blank" rel="noreferrer" class="btn-outline">Ver perfil completo →</a>
   </div>
   <div class="ig-grid">
-    <?php for ($i = 1; $i <= 8; $i++): ?>
+    <?php for ($i = 1; $i <= 3; $i++): ?>
       <a href="https://www.instagram.com/comunidadeccn/" target="_blank" rel="noreferrer" class="ig-item" aria-label="Ver publicação no Instagram da CCN">
         <img src="/img/insta-<?= $i ?>.jpg" alt="Publicação do Instagram da CCN" loading="lazy">
         <span class="ig-overlay">
