@@ -116,7 +116,7 @@ require __DIR__ . '/includes/header.php';
       // Incluído o nome do arquivo correspondente no final de cada item do array (posição [5])
       ['Mensagem','28 Set 2025','A cultura do Reino em tempos de incerteza','O evangelho responde às grandes questões da nossa geração com esperança e liberdade.','preaching.jpg', 'msg-cultura-do-reino.php'],
       ['Mensagem','24 Set 2025','Obediência gera relacionamento','Deus nos exorta a crescer e florescer com esperança, mesmo em terra de sofrimento e dor.','worship-band.jpg', 'msg-obediencia-gera-relacionamento.php'],
-      ['Esboço','18 Set 2025','Famílias que servem juntas','Cada geração ensina e aprende com a outra. O legado da fé atravessa o tempo.','family.jpg', 'msg-familias-que-servem.php'],
+      ['Mensagem', '18 Set 2025', 'Decisões', 'Quais decisões você tomou essa semana? Uma reflexão sobre as escolhas de Davi e o impacto de colocar a fé no Deus vivo.', 'family.jpg', 'msg-decisoes.php'],
     ] as $m): ?>
       <article class="card-soft article-card">
         <div class="thumb"><img src="assets/img/<?= e($m[4]) ?>" alt="" loading="lazy"></div>
