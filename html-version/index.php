@@ -2,7 +2,6 @@
 $pageTitle = 'CCN — Comunidade Cristo para as Nações | Igreja no Jd. Umarizal, SP';
 $pageDescription = 'Bem-vindo à CCN — família de fé no Jd. Umarizal, São Paulo. Cultos sexta 20h (presencial e online), domingo 9h30 (presencial e online) e 18h30 (online).';
 require __DIR__ . '/includes/header.php';
-require __DIR__ . '/includes/config.php';
 ?>
 
 <!-- HERO -->
@@ -123,9 +122,20 @@ require __DIR__ . '/includes/config.php';
     </div>
     <a href="https://instagram.com/<?= e($SITE['instagram']) ?>" target="_blank" rel="noreferrer" class="btn-outline">Ver perfil completo →</a>
   </div>
-  <div class="ig-widget-wrap">
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <iframe src="//lightwidget.com/widgets/3c396f52799a5720b8c10accc760f320.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;min-height:420px"></iframe>
+  <div class="ig-grid">
+    <?php for ($i = 1; $i <= 8; $i++): ?>
+      <a href="https://www.instagram.com/comunidadeccn/" target="_blank" rel="noreferrer" class="ig-item" aria-label="Ver publicação no Instagram da CCN">
+        <img src="/img/insta-<?= $i ?>.jpg" alt="Publicação do Instagram da CCN" loading="lazy">
+        <span class="ig-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <path d="M16 11.37a4 4 0 1 1-7.914 1.174A4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          <span>Ver no Instagram</span>
+        </span>
+      </a>
+    <?php endfor; ?>
   </div>
 </section>
 
