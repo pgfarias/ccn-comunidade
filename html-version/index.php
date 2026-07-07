@@ -115,7 +115,7 @@ require __DIR__ . '/includes/header.php';
     <?php foreach ([
       // Incluído o nome do arquivo correspondente no final de cada item do array (posição [5])
       ['Mensagem','28 Set 2025','A cultura do Reino em tempos de incerteza','O evangelho responde às grandes questões da nossa geração com esperança e liberdade.','preaching.jpg', 'msg-cultura-do-reino.php'],
-      ['Devocional','24 Set 2025','Discernimento espiritual no cotidiano','Voltar a mente para a verdade do evangelho é um exercício diário — e possível.','worship-band.jpg', 'msg-discernimento-espiritual.php'],
+      ['Mensagem','24 Set 2025','Obediência gera relacionamento','Deus nos exorta a crescer e florescer com esperança, mesmo em terra de sofrimento e dor.','worship-band.jpg', 'msg-obediencia-gera-relacionamento.php'],
       ['Esboço','18 Set 2025','Famílias que servem juntas','Cada geração ensina e aprende com a outra. O legado da fé atravessa o tempo.','family.jpg', 'msg-familias-que-servem.php'],
     ] as $m): ?>
       <article class="card-soft article-card">
