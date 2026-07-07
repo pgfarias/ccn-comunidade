@@ -41,11 +41,11 @@ require __DIR__ . '/includes/header.php';
       <p class="lede">Há mais de dez anos caminhamos juntos, propagando as boas novas de Cristo Jesus a toda criatura. Seja qual for a sua história, você é bem-vindo aqui.</p>
       <div class="hero-actions">
         <a href="sobre.php" class="btn-primary">Conheça a CCN →</a>
-        <a href="cultos.php" class="btn-live"><span class="live-dot"></span> Assista ao vivo</a>
+        <a href="https://www.youtube.com/@comunidadeccn" class="btn-live"><span class="live-dot"></span> Assista ao vivo</a>
       </div>
       <dl class="hero-stats">
         <div><dt>Fundada em</dt><dd>2014</dd></div>
-        <div><dt>Anos de comunidade</dt><dd>10+</dd></div>
+        <div><dt>Anos de comunidade</dt><dd>12+</dd></div>
         <div><dt>Ministérios</dt><dd>13</dd></div>
       </dl>
     </div>
