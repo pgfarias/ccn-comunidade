@@ -70,7 +70,7 @@ require __DIR__ . '/includes/header.php';
   </div>
   <div class="grid-3 mt-12">
     <?php foreach ([
-      ['Discernimento','Ajudar pessoas a alcançarem discernimento emocional e espiritual, voltando a mente para a verdade do evangelho.'],
+      ['Devocional','24 Set 2025','Obediência gera relacionamento','Deus nos exorta a crescer e florescer com esperança, mesmo em terra de sofrimento e dor.','worship-band.jpg', 'msg-obediencia-gera-relacionamento.php'],
       ['Mensagem','28 Set 2025','E sereis minhas testemunhas','O poder do Espírito Santo enviado para nos alinhar ao verdadeiro foco da igreja de Cristo.','preaching.jpg', 'msg-sereis-minhas-testemunhas.php'],
       ['Comunidade viva','Cada geração ensina e aprende com a outra. Bonança, caridade e sublimidade como marcas do povo de Deus.'],
     ] as $v): ?>
