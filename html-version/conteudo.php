@@ -15,7 +15,7 @@ require __DIR__ . '/includes/header.php';
   <div class="grid-3">
     <?php foreach ([
       // Adicionamos o nome do arquivo .php como o 5º índice (posição [5]) de cada linha:
-      ['Mensagem','28 Set 2025','A cultura do Reino em tempos de incerteza','O evangelho responde às grandes questões da nossa geração com esperança e liberdade.','preaching.jpg', 'msg-cultura-do-reino.php'],
+      ['Mensagem','28 Set 2025','E sereis minhas testemunhas','O poder do Espírito Santo enviado para nos alinhar ao verdadeiro foco da igreja de Cristo.','preaching.jpg', 'msg-sereis-minhas-testemunhas.php'],
       ['Devocional','24 Set 2025','Discernimento espiritual no cotidiano','Voltar a mente para a verdade do evangelho é um exercício diário.','worship-band.jpg', 'msg-discernimento-espiritual.php'],
       ['Esboço','18 Set 2025','Famílias que servem juntas','O legado da fé atravessa o tempo.','family.jpg', 'msg-familias-que-servem.php'],
       ['Mensagem','11 Set 2025','O caminho da bonança','A bondade prática como marca do povo de Deus.','community-1.jpg', 'msg-caminho-da-bonanca.php'],
